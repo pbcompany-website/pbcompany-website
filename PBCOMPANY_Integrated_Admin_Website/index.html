@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082653">
+  <meta name="description" content="PBCOMPANY 공식 홈페이지. 고객의 아이디어를 실질적인 가치로 연결하는 기술 기반 파트너.">
+  <title>회사소개 | PBCOMPANY</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+  <script src="auth-config.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="auth.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="PBCOMPANY 홈으로">
+        <img src="assets/pbcompany-logo.png" alt="PB COMPANY" width="1700" height="390">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="nav" aria-label="주 메뉴">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT US</a>
+        <a href="#values" class="nav-link">OUR VALUES</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+        <div class="account-nav"><button id="login-nav" class="nav-account login-link" type="button" data-auth-open="login">로그인</button><button id="signup-nav" class="nav-account signup-link" type="button" data-auth-open="signup">회원가입</button><span id="user-email" class="user-email" hidden></span><button id="admin-nav" class="nav-account admin-link" type="button" hidden>관리자 모드</button><button id="logout-nav" class="nav-account logout-link" type="button" hidden>로그아웃</button></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light"><span class="accent-line"></span> YOUR PARTNER IN TECHNOLOGY</p>
+        <h1 id="hero-title">기술을 연결하고,<br><span>새로운 가치를 만듭니다.</span></h1>
+        <p class="hero-description">PBCOMPANY는 다양한 기술적 요구를 이해하고<br class="desktop-only"> 실용적인 해결 방향을 함께 고민하는 파트너입니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">회사 소개 보기 <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#contact">문의하기 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>01 / COMPANY INTRODUCTION</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <p class="eyebrow">01 — ABOUT PBCOMPANY</p>
+          <h2 id="about-title">아이디어에서<br><em>가능성으로.</em></h2>
+          <div class="heading-rule"></div>
+        </div>
+        <div class="intro-copy">
+          <p class="lead" data-site-content="about_lead">PBCOMPANY는 변화하는 기술 환경 속에서 고객의 필요를 듣고, 실질적인 해결책을 고민합니다.</p>
+          <p data-site-content="about_p1">우리는 작은 아이디어도 소중하게 생각합니다. 명확한 소통과 꼼꼼한 접근을 바탕으로, 고객의 목표에 적합한 방향을 함께 찾아가고자 합니다.</p>
+          <p data-site-content="about_p2">신뢰를 바탕으로 오래 함께할 수 있는 기술 파트너가 되는 것이 PBCOMPANY가 지향하는 모습입니다.</p>
+          <div class="signature"><span class="sig-mark">PB</span><div><strong>PBCOMPANY</strong><small>TECHNOLOGY · TRUST · CONNECTION</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="브랜드 메시지">
+      <div class="container statement-inner">
+        <span class="statement-star" aria-hidden="true">✳</span>
+        <p>BETTER IDEAS.<br><span>BETTER POSSIBILITIES.</span></p>
+        <span class="statement-caption">함께 고민하고, 함께 성장합니다.</span>
+      </div>
+    </section>
+
+    <section class="values section" id="values" aria-labelledby="values-title">
+      <div class="container">
+        <div class="values-heading">
+          <div><p class="eyebrow">02 — OUR VALUES</p><h2 id="values-title">우리가 중요하게<br>생각하는 가치</h2></div>
+          <p>결과뿐 아니라, 그 결과에 이르는 과정까지<br>신뢰할 수 있도록 노력합니다.</p>
+        </div>
+        <div class="value-grid">
+          <article class="value-card"><span class="value-number">01</span><div class="value-icon" aria-hidden="true">◇</div><h3>신뢰 <span>TRUST</span></h3><p>약속과 소통을 소중히 여기며 믿을 수 있는 관계를 만들어갑니다.</p></article>
+          <article class="value-card"><span class="value-number">02</span><div class="value-icon" aria-hidden="true">↗</div><h3>성장 <span>GROWTH</span></h3><p>변화를 두려워하지 않고 지속적으로 배우고 발전합니다.</p></article>
+          <article class="value-card"><span class="value-number">03</span><div class="value-icon" aria-hidden="true">◎</div><h3>연결 <span>CONNECTION</span></h3><p>사람과 기술, 아이디어와 가능성을 유기적으로 연결합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div><p class="eyebrow light">03 — CONTACT US</p><h2 id="contact-title">함께 이야기해 볼까요?</h2><p>회사 소개 및 협력 관련 문의를 환영합니다.</p></div>
+        <a class="btn btn-contact" href="tel:01043012425">전화 문의 010-4301-2425 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="auth-dialog" class="auth-dialog" aria-labelledby="auth-title">
+    <div class="auth-card">
+      <button type="button" class="auth-close" id="auth-close" aria-label="닫기">×</button>
+      <img class="auth-logo" src="assets/pbcompany-logo.png" alt="PB COMPANY">
+      <p class="auth-eyebrow">PBCOMPANY MEMBER</p>
+      <h2 id="auth-title">로그인</h2>
+      <p id="auth-description" class="auth-description">PBCOMPANY 계정으로 로그인하세요.</p>
+      <div id="auth-tabs" class="auth-tabs" role="group" aria-label="로그인 또는 회원가입">
+        <button type="button" id="tab-login" class="active">로그인</button>
+        <button type="button" id="tab-signup">회원가입</button>
+      </div>
+      <form id="auth-form" novalidate>
+        <label for="auth-email">이메일 주소</label>
+        <input type="email" id="auth-email" name="email" placeholder="name@example.com" autocomplete="email" required maxlength="254">
+        <div id="auth-password-wrap"><label for="auth-password">비밀번호</label>
+        <input type="password" id="auth-password" name="password" placeholder="비밀번호 8자 이상" autocomplete="current-password" minlength="8" required></div>
+        <div id="auth-password-confirm-wrap" hidden><label for="auth-password-confirm">비밀번호 확인</label>
+        <input type="password" id="auth-password-confirm" name="confirm" placeholder="비밀번호 다시 입력" autocomplete="new-password" minlength="8"></div>
+        <p id="auth-message" class="auth-message" role="status" aria-live="polite"></p>
+        <button type="submit" id="auth-submit" class="auth-submit">로그인</button>
+      </form>
+      <button type="button" id="forgot-password" class="forgot-password">비밀번호를 잊으셨나요?</button>
+      <p class="auth-help">인증 메일이 오지 않으면 스팸함을 확인해 주세요.</p>
+    </div>
+  </dialog>
+
+
+  <dialog id="admin-dialog" class="admin-dialog" aria-labelledby="admin-title">
+    <div class="admin-wrap">
+      <div class="admin-top"><div><p class="admin-kicker">PBCOMPANY CONTROL CENTER</p><h2 id="admin-title">관리자 모드</h2></div><button type="button" id="admin-close" class="admin-close" aria-label="관리자 모드 닫기">×</button></div>
+      <p class="admin-info">동일 도메인에서 회사소개 내용을 관리합니다. 변경 사항은 모든 방문자에게 반영됩니다.</p>
+      <form id="admin-form">
+        <label for="edit-about-lead">회사소개 첫 문장</label><textarea id="edit-about-lead" required maxlength="900" rows="3"></textarea>
+        <label for="edit-about-p1">회사소개 두 번째 문단</label><textarea id="edit-about-p1" required maxlength="1200" rows="4"></textarea>
+        <label for="edit-about-p2">회사소개 세 번째 문단</label><textarea id="edit-about-p2" required maxlength="1200" rows="4"></textarea>
+        <p id="admin-status" aria-live="polite"></p>
+        <button id="admin-save" type="submit" class="admin-save">회사소개 저장</button>
+      </form>
+    </div>
+  </dialog>
+  <footer class="footer"><div class="container footer-inner"><a href="#home" aria-label="맨 위로"><img src="assets/pbcompany-logo.png" alt="PB COMPANY" width="1700" height="390"></a><div><p>PBCOMPANY · 회사소개 홈페이지</p><small>© <span id="year"></span> PBCOMPANY. All rights reserved.</small></div><a class="back-top" href="#top">TOP ↑</a></div></footer>
+</body>
+</html>
